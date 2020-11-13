@@ -1,0 +1,177 @@
+/* font-family: 'Anton', sans-serif;
+font-family: 'Arimo', sans-serif; 
+$c1 = #1e232b   
+$c2 = #b7cced   
+$c3 = #eddbb7   
+$c4 = #ff6b00 */
+
+/* STYLE DU CONTAINER */
+
+body, div.container {
+    height: 100vh;
+    max-height: 100%;
+    background-color: #1e232b;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+}
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 80%;
+    margin:auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+}
+header #main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+header h1 {
+    color: #eddbb7;
+    border-bottom: 2px solid #ff6b00;
+    font-size: 5em;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+header h2 {
+    color: #b7cced;
+    font-size: 2em;
+}
+
+/* STYLES GENERIQUES DES TOUCHES */
+#clavier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#clavier section {
+    margin-bottom:10px;
+    display: flex;
+}
+#clavier input {
+    font-family:'Anton', sans-serif;
+    font-size: 1.5em;
+    background-color: #eddbb7;
+    border:none;
+    border-radius:3px;
+    width: 100px;
+    height:80px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* STYLE PERSONNALISATIONS TOUCHES */
+
+/* Supprimer */
+section #supprimer {
+    background-image: url('../img/left-back-straight-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: center;
+    width: 150px;
+}
+
+/* Nightshift */
+section #nightshift {
+    background-image: url('../img/moon.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+}
+
+/* Carac spé 1/2 */
+section #caracspe {
+    width: 150px;
+    font-size: 2em;
+}
+
+/* Capslock */
+section #LED {
+    position: relative;
+}
+section #LED::after {
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width:10px;
+    height: 10px;
+    border-radius: 10px;
+}
+section #capslock {
+    width: 170px;
+}
+
+/* Entrée */
+section #entree {
+    background-image: url('../img/enter-arrow.svg');
+    background-repeat: no-repeat;
+    background-size:45px;
+    background-position: center;
+    width: 170px;
+}
+
+/* Shift */
+section #shift {
+    background-image: url('../img/shift.svg');
+    background-repeat: no-repeat;
+    background-size:35px;
+    background-position: center;
+    width: 150px;
+}
+
+/* Chevrons */
+section #chevrons {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Github */
+section #github {
+    background-image: url('../img/github.svg');
+    background-repeat: no-repeat;
+    background-size:40px;
+    background-position: center;
+}
+
+/* Space */
+section .space-symbol {
+    position: relative;
+}
+section .space-symbol::after {
+    content:"[";
+    color: black;
+    font-size: 2.5em;
+    position: absolute;
+    top: 25px;
+    right:300px;
+    transform: rotate(270deg);
+}
+section #space {
+    width: 600px;
+}
+
+/* portfolio */
+section #portfolio {
+    background-image: url('../img/world-wide-web.svg');
+    background-repeat: no-repeat;
+    background-size:40px;
+    background-position: center;
+}
+
+/* FOOTER */
+Footer {
+    text-align: center;
+    color:#ff6b00
+}

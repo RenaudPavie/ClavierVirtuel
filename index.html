@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clavier virtuel</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- 
+            **------**
+              HEADER 
+            **------**
+        -->
+
+        <header>
+            <div id="main-title">
+                <h1>CLAVIER VIRTUEL</h1>
+                <h2>Par Renaud Pavie</h2>
+            </div>
+        </header>
+
+        <!-- 
+            **-------**
+              CLAVIER 
+            **-------**
+        -->
+
+        <main id="clavier">
+
+            <section class="chiffres">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="0">
+                <input type="button" id="supprimer">
+            </section>
+
+            <section class="nigth-row">
+                <input type="button" id="nightshift">
+                <input type="button" value="a">
+                <input type="button" value="z">
+                <input type="button" value="e">
+                <input type="button" value="r">
+                <input type="button" value="t">
+                <input type="button" value="y">
+                <input type="button" value="u">
+                <input type="button" value="i">
+                <input type="button" value="o">
+                <input type="button" value="p">
+                <input type="button" value="1/2" id="caracspe">
+            </section>
+
+            <section class="capslock-row">
+                <span id="LED">
+                    <input type="button" value="CAPS" id="capslock">
+                </span>
+                <input type="button" value="q">
+                <input type="button" value="s">
+                <input type="button" value="d">
+                <input type="button" value="f">
+                <input type="button" value="g">
+                <input type="button" value="h">
+                <input type="button" value="j">
+                <input type="button" value="k">
+                <input type="button" value="l">
+                <input type="button" value="m">
+                <input type="button" id="entree">
+            </section>
+
+            <section class="shift-row">
+                <input type="button" id="shift">
+                <input type="button" value="< >" id="chevrons">
+                <input type="button" value="w">
+                <input type="button" value="x">
+                <input type="button" value="c">
+                <input type="button" value="v">
+                <input type="button" value="b">
+                <input type="button" value="n">
+                <input type="button" value="?">
+                <input type="button" value=".">
+                <input type="button" value=":">
+                <input type="button" value="!">
+            </section>
+
+            <section class="space-row">
+                <input type="button" id="github">
+                <span class="space-symbol">
+                    <input type="button" id="space">
+                </span>
+                <input type="button" id="portfolio">
+            </section>
+
+        </main>
+
+
+        <!-- 
+            **------**
+              FOOTER 
+            **------**
+        -->
+
+        <footer>
+            <small>&copy; Copyright 2020, Renaud PAVIE</small>        
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
