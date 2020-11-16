@@ -18,7 +18,8 @@ div.container {
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-    width: 80%;
+    align-items: center;
+    max-width: 80%;
     margin:auto;
 }
 
@@ -57,8 +58,14 @@ header h2 {
 #clavier section {
     margin-bottom:10px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-#clavier input {
+#clavier section input:not(:last-of-type) {
+    margin-right: 10px;
+}
+#clavier input,#clavier button {
     font-family:'Anton', sans-serif;
     font-size: 1.5em;
     background-color: #eddbb7;
@@ -66,10 +73,11 @@ header h2 {
     border-radius:3px;
     width: 100px;
     height:80px;
-    margin-right: 10px;
     cursor: pointer;
 }
-
+#clavier input.larger, span.larger {
+    width: 150px;
+}
 /* STYLE PERSONNALISATIONS TOUCHES */
 
 /* Supprimer */
@@ -78,7 +86,6 @@ section #supprimer {
     background-repeat: no-repeat;
     background-size: 60px;
     background-position: center;
-    width: 150px;
 }
 
 /* Nightshift */
@@ -91,27 +98,33 @@ section #nightshift {
 
 /* Carac spé 1/2 */
 section #caracspe {
-    width: 150px;
     font-size: 2em;
 }
 
 /* Capslock */
 section #LED {
     position: relative;
+    margin-right: 10px;
+    padding:0;
+    width: 170px;
+    text-transform: uppercase;
 }
 section #LED::after {
     content:"";
     background-color: black;
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 10px;
     width:10px;
     height: 10px;
     border-radius: 10px;
+    pointer-events: none;
 }
-section #capslock {
-    width: 170px;
+section #LED.focused::after {
+    background-color: #ff6b00;
 }
+
+
 
 /* Entrée */
 section #entree {
@@ -119,7 +132,6 @@ section #entree {
     background-repeat: no-repeat;
     background-size:45px;
     background-position: center;
-    width: 170px;
 }
 
 /* Shift */
@@ -128,7 +140,6 @@ section #shift {
     background-repeat: no-repeat;
     background-size:35px;
     background-position: center;
-    width: 150px;
 }
 
 /* Chevrons */
@@ -152,14 +163,20 @@ section .space-symbol {
 section .space-symbol::after {
     content:"[";
     color: black;
-    font-size: 2.5em;
+    font-size: 40px;
     position: absolute;
-    top: 25px;
-    right:300px;
+    top:calc(50% - 15px);
+    right:calc(50% - 20px);
     transform: rotate(270deg);
+    text-align: justify;
+    vertical-align: center;
+}
+section .space-symbol.focused::after {
+    color: #eddbb7;
 }
 section #space {
     width: 600px;
+    margin-right: 10px;
 }
 
 /* portfolio */

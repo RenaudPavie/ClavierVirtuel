@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Clavier virtuel</title>
 </head>
 <body>
@@ -44,54 +45,54 @@
                 <input type="button" value="8">
                 <input type="button" value="9">
                 <input type="button" value="0">
-                <input type="button" id="supprimer">
+                <input type="button" class="larger" id="supprimer">
             </section>
 
             <section class="nigth-row">
                 <input type="button" id="nightshift">
-                <input type="button" value="a">
-                <input type="button" value="z">
-                <input type="button" value="e">
-                <input type="button" value="r">
-                <input type="button" value="t">
-                <input type="button" value="y">
-                <input type="button" value="u">
-                <input type="button" value="i">
-                <input type="button" value="o">
-                <input type="button" value="p">
-                <input type="button" value="1/2" id="caracspe">
+                <input type="button" class="letter" value="a">
+                <input type="button" class="letter" value="z">
+                <input type="button" class="letter" value="e">
+                <input type="button" class="letter" value="r">
+                <input type="button" class="letter" value="t">
+                <input type="button" class="letter" value="y">
+                <input type="button" class="letter" value="u">
+                <input type="button" class="letter" value="i">
+                <input type="button" class="letter" value="o">
+                <input type="button" class="letter" value="p">
+                <input type="button" class="larger" value="1/2" id="caracspe">
             </section>
 
             <section class="capslock-row">
-                <span id="LED">
-                    <input type="button" value="CAPS" id="capslock">
-                </span>
-                <input type="button" value="q">
-                <input type="button" value="s">
-                <input type="button" value="d">
-                <input type="button" value="f">
-                <input type="button" value="g">
-                <input type="button" value="h">
-                <input type="button" value="j">
-                <input type="button" value="k">
-                <input type="button" value="l">
-                <input type="button" value="m">
-                <input type="button" id="entree">
+                <button id="LED">
+                    caps
+                </button>
+                <input type="button" class="letter" value="q">
+                <input type="button" class="letter" value="s">
+                <input type="button" class="letter" value="d">
+                <input type="button" class="letter" value="f">
+                <input type="button" class="letter" value="g">
+                <input type="button" class="letter" value="h">
+                <input type="button" class="letter" value="j">
+                <input type="button" class="letter" value="k">
+                <input type="button" class="letter" value="l">
+                <input type="button" class="letter" value="m">
+                <input type="button" class="larger" id="entree">
             </section>
 
             <section class="shift-row">
-                <input type="button" id="shift">
+                <input type="button" class="larger" id="shift">
                 <input type="button" value="< >" id="chevrons">
-                <input type="button" value="w">
-                <input type="button" value="x">
-                <input type="button" value="c">
-                <input type="button" value="v">
-                <input type="button" value="b">
-                <input type="button" value="n">
-                <input type="button" value="?">
-                <input type="button" value=".">
-                <input type="button" value=":">
-                <input type="button" value="!">
+                <input type="button" class="letter" value="w">
+                <input type="button" class="letter" value="x">
+                <input type="button" class="letter" value="c">
+                <input type="button" class="letter" value="v">
+                <input type="button" class="letter" value="b">
+                <input type="button" class="letter" value="n">
+                <input type="button" class="letter" value="?">
+                <input type="button" class="letter" value=".">
+                <input type="button" class="letter" value=":">
+                <input type="button" class="letter" value="!">
             </section>
 
             <section class="space-row">
@@ -115,6 +116,7 @@
             <small>&copy; Copyright 2020, Renaud PAVIE</small>        
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

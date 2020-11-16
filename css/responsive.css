@@ -1,0 +1,84 @@
+@media screen and (max-width: 1600px) {
+    #clavier input, #clavier section #LED,#clavier section #entree {
+        height: 60px;
+    }
+    #clavier section #LED,#clavier section #entree {
+        width: 130px;
+    }
+    section #space {
+        width: 450px;
+    }
+    section .space-symbol::after {
+        top: calc(50% - 15px);
+        right: calc(50% - 5px);
+    }
+    section #supprimer {
+        background-size: 50px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    section #LED::after {
+        content:none;
+    }
+    section #LED.focused {
+        color:#ff6b00;
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    div.container {
+        max-width: 90%;
+    }
+    section #LED, section #entree {
+        width: 100px;
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    div.container {
+        max-width: 95%;
+    }
+    #clavier input, #clavier section #LED,#clavier section #entree {
+        height: 50px;
+    }
+    #clavier input.larger {
+        min-width: 70px;
+    }
+    #clavier input.letter {
+        width: 40px;
+    }
+    section #LED, section #entree {
+        width: 90px;
+    }
+    #clavier input,#clavier button {
+        font-size: 1.25em;
+    }
+
+    /* Réduction des tailles d'icones */
+    section #supprimer {
+        background-size: 40px;
+    }
+    section #nightshift {
+        background-size: 30px;
+    }
+    section #shift {
+        background-size: 30px;
+    }
+    section #entree {
+        background-size: 30px;
+    }
+    section #caracspe {
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width: 650px) {
+    section #space {
+        width: 300px;
+    }
+    section #chevrons {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+
+}
