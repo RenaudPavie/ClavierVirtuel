@@ -16,10 +16,6 @@ $('#LED').on('click', function() {
         })
         LEDcounter = 0;
     }
-
-
-    
-
 })
 
 nightCounter = 0;
@@ -39,26 +35,33 @@ $('#nightshift').on('click', function() {
     $('body, div.container').css({
         'backgroundColor':'#b7cced'
     })
+    $('header h1, header h2').css({
+        'color':'#1e232b'
+    })
+    $('.zoneText').css({
+        'color':'#1e232b',
+        'backgroundColor':'#b7cced'
+    })
 
      // Couleur des icones
     $('section .space-symbol').addClass('focused')
     $('section #nightshift').css({
-        'backgroundImage':'url(../img/moon-beige.svg'
+        'backgroundImage':'url(img/moon-beige.svg)'
     })
     $('section #shift').css({
-        'backgroundImage':'url(../img/shift-beige.svg'
+        'backgroundImage':'url(img/shift-beige.svg)'
     })
     $('section #github').css({
-        'backgroundImage':'url(../img/github-beige.svg'
+        'backgroundImage':'url(img/github-beige.svg)'
     })
     $('section #portfolio').css({
-        'backgroundImage':'url(../img/world-wide-web-beige.svg'
+        'backgroundImage':'url(img/world-wide-web-beige.svg)'
     })
     $('section #supprimer').css({
-        'backgroundImage':'url(../img/left-back-straight-arrow-beige.svg'
+        'backgroundImage':'url(img/left-back-straight-arrow-beige.svg)'
     })
     $('section #entree').css({
-        'backgroundImage':'url(../img/enter-arrow-beige.svg'
+        'backgroundImage':'url(img/enter-arrow-beige.svg)'
     })
 
 
@@ -72,25 +75,36 @@ $('#nightshift').on('click', function() {
             'backgroundColor':'#eddbb7',
             'color': '#000',
         });
+        $('header h2').css({
+            'color':'#b7cced'
+        })
+        $('header h1').css({
+            'color':'#eddbb7'
+        })
+        $('.zoneText').css({
+            'color':'#eddbb7',
+            'backgroundColor':'#1e232b'
+        })
+        
 
         // Couleur des icones
         $('section #nightshift').css({
-            'backgroundImage':'url(../img/moon.svg'
+            'backgroundImage':'url(img/moon.svg)'
         })
         $('section #shift').css({
-            'backgroundImage':'url(../img/shift.svg'
+            'backgroundImage':'url(img/shift.svg)'
         })
         $('section #github').css({
-            'backgroundImage':'url(../img/github.svg'
+            'backgroundImage':'url(img/github.svg)'
         })
         $('section #portfolio').css({
-            'backgroundImage':'url(../img/world-wide-web.svg'
+            'backgroundImage':'url(img/world-wide-web.svg)'
         })
         $('section #supprimer').css({
-            'backgroundImage':'url(../img/left-back-straight-arrow.svg'
+            'backgroundImage':'url(img/left-back-straight-arrow.svg)'
         })
         $('section #entree').css({
-            'backgroundImage':'url(../img/enter-arrow.svg'
+            'backgroundImage':'url(img/enter-arrow.svg)'
         })
         $('section .space-symbol').removeClass('focused')
         nightCounter = 0;
@@ -100,3 +114,12 @@ $('#nightshift').on('click', function() {
     
 
 })
+
+
+// Fonctionnement du clavier
+
+let zoneText = document.querySelector('.zoneText');
+
+function keyClicked(value) {
+    zoneText.innerHTML += value;
+}

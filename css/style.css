@@ -47,6 +47,19 @@ header h2 {
     font-size: 2em;
 }
 
+/* ZONE DE TEXTE */
+.zoneText  {
+    border:none;
+    width: 90%;
+    color:#eddbb7;
+    font-family: 'Arimo', sans-serif;
+    background-color: #1e232b;
+    font-size: 1.3rem;
+}
+/* .zoneText:focus  {
+    outline: #eddbb7;
+} */
+
 /* STYLES GENERIQUES DES TOUCHES */
 #clavier {
     display: flex;
