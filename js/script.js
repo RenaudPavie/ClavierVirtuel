@@ -126,6 +126,8 @@ window.addEventListener('load', () => {
         if (isCaracSpe === false ) {
             //Changement de clavier pour les carac spéciaux
 
+            
+
             aKey.setAttribute('value', '+');
             zKey.setAttribute('value', '*');
             eKey.setAttribute('value', '/');
@@ -159,35 +161,68 @@ window.addEventListener('load', () => {
             isCaracSpe = true;
         } else {
             // Clavier normal
-            aKey.setAttribute('value', 'a');
-            zKey.setAttribute('value', 'z');
-            eKey.setAttribute('value', 'e');
-            rKey.setAttribute('value', 'r');
-            tKey.setAttribute('value', 't');
-            yKey.setAttribute('value', 'y');
-            uKey.setAttribute('value', 'u');
-            iKey.setAttribute('value', 'i');
-            oKey.setAttribute('value', 'o');
-            pKey.setAttribute('value', 'p');
+            if (isCaps === false) {
 
-            qKey.setAttribute('value', 'q');
-            sKey.setAttribute('value', 's');
-            dKey.setAttribute('value', 'd');
-            fKey.setAttribute('value', 'f');
-            gKey.setAttribute('value', 'g');
-            hKey.setAttribute('value', 'h');
-            jKey.setAttribute('value', 'j');
-            kKey.setAttribute('value', 'k');
-            lKey.setAttribute('value', 'l');
-            mKey.setAttribute('value', 'm');
+                aKey.setAttribute('value', 'a');
+                zKey.setAttribute('value', 'z');
+                eKey.setAttribute('value', 'e');
+                rKey.setAttribute('value', 'r');
+                tKey.setAttribute('value', 't');
+                yKey.setAttribute('value', 'y');
+                uKey.setAttribute('value', 'u');
+                iKey.setAttribute('value', 'i');
+                oKey.setAttribute('value', 'o');
+                pKey.setAttribute('value', 'p');
 
-            wKey.setAttribute('value', '{w');
-            xKey.setAttribute('value', 'x');
-            cKey.setAttribute('value', 'c');
-            vKey.setAttribute('value', 'v');
-            bKey.setAttribute('value', 'b');
-            nKey.setAttribute('value', 'n');
+                qKey.setAttribute('value', 'q');
+                sKey.setAttribute('value', 's');
+                dKey.setAttribute('value', 'd');
+                fKey.setAttribute('value', 'f');
+                gKey.setAttribute('value', 'g');
+                hKey.setAttribute('value', 'h');
+                jKey.setAttribute('value', 'j');
+                kKey.setAttribute('value', 'k');
+                lKey.setAttribute('value', 'l');
+                mKey.setAttribute('value', 'm');
 
+                wKey.setAttribute('value', 'w');
+                xKey.setAttribute('value', 'x');
+                cKey.setAttribute('value', 'c');
+                vKey.setAttribute('value', 'v');
+                bKey.setAttribute('value', 'b');
+                nKey.setAttribute('value', 'n');
+            } else {
+
+                aKey.setAttribute('value', 'A');
+                zKey.setAttribute('value', 'Z');
+                eKey.setAttribute('value', 'E');
+                rKey.setAttribute('value', 'R');
+                tKey.setAttribute('value', 'T');
+                yKey.setAttribute('value', 'Y');
+                uKey.setAttribute('value', 'U');
+                iKey.setAttribute('value', 'I');
+                oKey.setAttribute('value', 'O');
+                pKey.setAttribute('value', 'P');
+
+                qKey.setAttribute('value', 'Q');
+                sKey.setAttribute('value', 'S');
+                dKey.setAttribute('value', 'D');
+                fKey.setAttribute('value', 'F');
+                gKey.setAttribute('value', 'G');
+                hKey.setAttribute('value', 'H');
+                jKey.setAttribute('value', 'J');
+                kKey.setAttribute('value', 'K');
+                lKey.setAttribute('value', 'L');
+                mKey.setAttribute('value', 'M');
+
+                wKey.setAttribute('value', 'W');
+                xKey.setAttribute('value', 'X');
+                cKey.setAttribute('value', 'C');
+                vKey.setAttribute('value', 'V');
+                bKey.setAttribute('value', 'B');
+                nKey.setAttribute('value', 'N');
+                isCaps = true;
+            }
             caracSpe.setAttribute('value', '1/2');
             isCaracSpe = false;
         }
