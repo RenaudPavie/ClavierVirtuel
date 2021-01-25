@@ -56,9 +56,6 @@ header h2 {
     background-color: #1e232b;
     font-size: 1.3rem;
 }
-/* .zoneText:focus  {
-    outline: #eddbb7;
-} */
 
 /* STYLES GENERIQUES DES TOUCHES */
 #clavier {
@@ -75,10 +72,13 @@ header h2 {
     justify-content: center;
     width: 100%;
 }
-#clavier section input:not(:last-of-type) {
+#clavier section input:not(:last-of-type),
+#clavier a:not(:last-of-type) {
     margin-right: 10px;
 }
-#clavier input,#clavier button {
+#clavier input,
+#clavier button,
+#clavier a {
     font-family:'Anton', sans-serif;
     font-size: 1.5em;
     background-color: #eddbb7;
@@ -88,7 +88,8 @@ header h2 {
     height:80px;
     cursor: pointer;
 }
-#clavier input.larger, span.larger {
+#clavier input.larger, 
+span.larger {
     width: 150px;
 }
 /* STYLE PERSONNALISATIONS TOUCHES */
@@ -111,7 +112,7 @@ section #nightshift {
 
 /* Carac spé 1/2 */
 section #caracspe {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 /* Capslock */
@@ -184,9 +185,7 @@ section .space-symbol::after {
     text-align: justify;
     vertical-align: center;
 }
-section .space-symbol.focused::after {
-    color: #eddbb7;
-}
+
 section #space {
     width: 600px;
     margin-right: 10px;

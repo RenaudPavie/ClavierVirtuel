@@ -1,0 +1,39 @@
+/* couleur nuit */
+#clavier input,#clavier button, #clavier a {
+    background-color:#1e232b;
+    color: #eddbb7
+}
+body, div.container{
+    background-color:#b7cced;
+}
+header h1, header h2 {
+    color:#1e232b;
+}
+.zoneText {
+    color:#1e232b;
+    background-color:#b7cced;
+}
+
+
+/* // Couleur des icones */
+section .space-symbol.focused::after {
+    color: #eddbb7;
+}
+section #nightshift {
+    background-image:url('../img/moon-beige.svg');
+}
+section #shift {
+    background-image:url('../img/shift-beige.svg');
+}
+section #github {
+    background-image:url('../img/github-beige.svg');
+}
+section #portfolio {
+    background-image:url('../img/world-wide-web-beige.svg');
+}
+section #supprimer {
+    background-image:url('../img/left-back-straight-arrow-beige.svg');
+}
+section #entree {
+    background-image:url('../img/enter-arrow-beige.svg');
+}

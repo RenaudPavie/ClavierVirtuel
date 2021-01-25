@@ -1,5 +1,5 @@
 @media screen and (max-width: 1600px) {
-    #clavier input, #clavier section #LED,#clavier section #entree {
+    #clavier input, #clavier section #LED,#clavier section #entree, #clavier a {
         height: 60px;
     }
     #clavier section #LED,#clavier section #entree {
@@ -23,7 +23,12 @@
     section #LED.focused {
         color:#ff6b00;
     }
-    
+    #clavier section {
+        margin-bottom: 5px;
+    }
+    #clavier section input:not(:last-of-type),#clavier a:not(:last-of-type), section #space, section #LED {
+        margin-right: 5px;
+    }
 }
 @media screen and (max-width: 1000px) {
     div.container {
@@ -38,20 +43,21 @@
     div.container {
         max-width: 95%;
     }
-    #clavier input, #clavier section #LED,#clavier section #entree {
-        height: 50px;
+
+    #clavier input, #clavier section #LED,#clavier section #entree, #clavier a {
+        height: 40px;
     }
     #clavier input.larger {
         min-width: 70px;
     }
-    #clavier input.letter {
+    #clavier input.letter:not(#space), #clavier a {
         width: 40px;
     }
     section #LED, section #entree {
         width: 90px;
     }
-    #clavier input,#clavier button {
-        font-size: 1.25em;
+    #clavier input,#clavier button, #clavier a {
+        font-size: 1.05em;
     }
 
     /* Réduction des tailles d'icones */
@@ -67,8 +73,14 @@
     section #entree {
         background-size: 30px;
     }
+    section #github {
+        background-size: 30px;
+    }
+    section #portfolio {
+        background-size: 30px;
+    }
     section #caracspe {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 }
 @media screen and (max-width: 650px) {
@@ -91,5 +103,32 @@
     }
     header h2 {
         font-size: 1.5em;
+    }
+    section #space {
+        width: 200px;
+    }
+    #clavier input.larger {
+        min-width: 50px;
+    }
+    section #supprimer {
+        background-size: 30px;
+    }
+    section #nightshift {
+        background-size: 20px;
+    }
+    section #shift {
+        background-size: 20px;
+    }
+    section #entree {
+        background-size: 20px;
+    }
+    section #github {
+        background-size: 20px;
+    }
+    section #portfolio {
+        background-size: 20px;
+    }
+    section #caracspe {
+        font-size: 1.3em;
     }
 }
