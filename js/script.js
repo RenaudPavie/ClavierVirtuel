@@ -126,8 +126,6 @@ window.addEventListener('load', () => {
         if (isCaracSpe === false ) {
             //Changement de clavier pour les carac spéciaux
 
-            
-
             aKey.setAttribute('value', '+');
             zKey.setAttribute('value', '*');
             eKey.setAttribute('value', '/');
@@ -162,7 +160,6 @@ window.addEventListener('load', () => {
         } else {
             // Clavier normal
             if (isCaps === false) {
-
                 aKey.setAttribute('value', 'a');
                 zKey.setAttribute('value', 'z');
                 eKey.setAttribute('value', 'e');
@@ -192,7 +189,6 @@ window.addEventListener('load', () => {
                 bKey.setAttribute('value', 'b');
                 nKey.setAttribute('value', 'n');
             } else {
-
                 aKey.setAttribute('value', 'A');
                 zKey.setAttribute('value', 'Z');
                 eKey.setAttribute('value', 'E');
@@ -230,6 +226,10 @@ window.addEventListener('load', () => {
 
 
     // Mode QWERTY / AZERTY ( Prise en compte du changement de langue alors que la majuscule est activé)
+    const speKey1 = document.querySelector('.speKey1');
+    const speKey2 = document.querySelector('.speKey2');
+    const speKey3 = document.querySelector('.speKey3');
+    
     lang.forEach((btn) => {
         btn.addEventListener('click', (e) => {
             if(e.target.id === "qwerty") {
@@ -238,25 +238,34 @@ window.addEventListener('load', () => {
                     zKey.setAttribute('value', 'w');
                     qKey.setAttribute('value', 'a');
                     wKey.setAttribute('value', 'z');
+                    mKey.setAttribute('value', ':');
+                    speKey1.setAttribute('value', 'm');
+                    speKey2.setAttribute('value', '?');
+                    speKey3.setAttribute('value', '.');
                 } else {
                     aKey.setAttribute('value', 'Q');
                     zKey.setAttribute('value', 'W');
                     qKey.setAttribute('value', 'A');
                     wKey.setAttribute('value', 'Z');
+                    speKey1.setAttribute('value', 'M');
                 }
-                
             } else {
                 if(isCaps === false) {
                     aKey.setAttribute('value', 'a');
                     zKey.setAttribute('value', 'z');
                     qKey.setAttribute('value', 'q');
                     wKey.setAttribute('value', 'w');
+                    mKey.setAttribute('value', 'm');
+                    speKey1.setAttribute('value', '?');
+                    speKey2.setAttribute('value', '.');
+                    speKey3.setAttribute('value', ':');
                 } else {
                     aKey.setAttribute('value', 'A');
                     zKey.setAttribute('value', 'Z');
                     qKey.setAttribute('value', 'Q');
                     wKey.setAttribute('value', 'W');
-                }   
+                    mKey.setAttribute('value', 'M');
+                }  
             }
         })
     })
